@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS_Chess</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="chess.css">
+		<style id="style1">
+			.selected {
+				background-color: #ff6600;
+			}
+		</style>
+		<style id="style2">
+			.choice {
+				background-color: #ffcc00;
+			}
+		</style>
+		<style id="style3">
+			td:hover {
+				background-color: #ff6600;
+			}
+		</style>
+		<script type="text/javascript" src="chess.js"></script>
+	</head>
+	<body>
+		<header>
+			<p id="header">
+   				Chess
+			</p>
+			<br>
+			<hr>
+		</header>
+		<board>
+			<table id="deadBlack">
+				<tr>
+					<td class="black" data-row="0" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="0" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="1" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="1" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="2" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="2" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="3" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="3" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="4" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="4" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="5" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="5" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="6" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="6" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="7" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="7" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+			</table>
+			<table id="board">
+				<tr>
+					<td class="white" data-row="0" data-elem="0"><img src="pieces/tb.png"></td>
+					<td class="black" data-row="0" data-elem="1"><img src="pieces/sb.png"></td>
+					<td class="white" data-row="0" data-elem="2"><img src="pieces/lb.png"></td>
+					<td class="black" data-row="0" data-elem="3"><img src="pieces/db.png"></td>
+					<td class="white" data-row="0" data-elem="4"><img src="pieces/kb.png"></td>
+					<td class="black" data-row="0" data-elem="5"><img src="pieces/lb.png"></td>
+					<td class="white" data-row="0" data-elem="6"><img src="pieces/sb.png"></td>
+					<td class="black" data-row="0" data-elem="7"><img src="pieces/tb.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="1" data-elem="0"><img src="pieces/bb.png"></td>
+					<td class="white" data-row="1" data-elem="1"><img src="pieces/bb.png"></td>
+					<td class="black" data-row="1" data-elem="2"><img src="pieces/bb.png"></td>
+					<td class="white" data-row="1" data-elem="3"><img src="pieces/bb.png"></td>
+					<td class="black" data-row="1" data-elem="4"><img src="pieces/bb.png"></td>
+					<td class="white" data-row="1" data-elem="5"><img src="pieces/bb.png"></td>
+					<td class="black" data-row="1" data-elem="6"><img src="pieces/bb.png"></td>
+					<td class="white" data-row="1" data-elem="7"><img src="pieces/bb.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="2" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="2" data-elem="1"><img src="pieces/in.png"></td>
+					<td class="white" data-row="2" data-elem="2"><img src="pieces/in.png"></td>
+					<td class="black" data-row="2" data-elem="3"><img src="pieces/in.png"></td>
+					<td class="white" data-row="2" data-elem="4"><img src="pieces/in.png"></td>
+					<td class="black" data-row="2" data-elem="5"><img src="pieces/in.png"></td>
+					<td class="white" data-row="2" data-elem="6"><img src="pieces/in.png"></td>
+					<td class="black" data-row="2" data-elem="7"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="3" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="3" data-elem="1"><img src="pieces/in.png"></td>
+					<td class="black" data-row="3" data-elem="2"><img src="pieces/in.png"></td>
+					<td class="white" data-row="3" data-elem="3"><img src="pieces/in.png"></td>
+					<td class="black" data-row="3" data-elem="4"><img src="pieces/in.png"></td>
+					<td class="white" data-row="3" data-elem="5"><img src="pieces/in.png"></td>
+					<td class="black" data-row="3" data-elem="6"><img src="pieces/in.png"></td>
+					<td class="white" data-row="3" data-elem="7"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="4" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="black" data-row="4" data-elem="1"><img src="pieces/in.png"></td>
+					<td class="white" data-row="4" data-elem="2"><img src="pieces/in.png"></td>
+					<td class="black" data-row="4" data-elem="3"><img src="pieces/in.png"></td>
+					<td class="white" data-row="4" data-elem="4"><img src="pieces/in.png"></td>
+					<td class="black" data-row="4" data-elem="5"><img src="pieces/in.png"></td>
+					<td class="white" data-row="4" data-elem="6"><img src="pieces/in.png"></td>
+					<td class="black" data-row="4" data-elem="7"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="5" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="5" data-elem="1"><img src="pieces/in.png"></td>
+					<td class="black" data-row="5" data-elem="2"><img src="pieces/in.png"></td>
+					<td class="white" data-row="5" data-elem="3"><img src="pieces/in.png"></td>
+					<td class="black" data-row="5" data-elem="4"><img src="pieces/in.png"></td>
+					<td class="white" data-row="5" data-elem="5"><img src="pieces/in.png"></td>
+					<td class="black" data-row="5" data-elem="6"><img src="pieces/in.png"></td>
+					<td class="white" data-row="5" data-elem="7"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="6" data-elem="0"><img src="pieces/bw.png"></td>
+					<td class="black" data-row="6" data-elem="1"><img src="pieces/bw.png"></td>
+					<td class="white" data-row="6" data-elem="2"><img src="pieces/bw.png"></td>
+					<td class="black" data-row="6" data-elem="3"><img src="pieces/bw.png"></td>
+					<td class="white" data-row="6" data-elem="4"><img src="pieces/bw.png"></td>
+					<td class="black" data-row="6" data-elem="5"><img src="pieces/bw.png"></td>
+					<td class="white" data-row="6" data-elem="6"><img src="pieces/bw.png"></td>
+					<td class="black" data-row="6" data-elem="7"><img src="pieces/bw.png"></td>
+				</tr>
+				<tr>
+					<td class="black" data-row="7" data-elem="0"><img src="pieces/tw.png"></td>
+					<td class="white" data-row="7" data-elem="1"><img src="pieces/sw.png"></td>
+					<td class="black" data-row="7" data-elem="2"><img src="pieces/lw.png"></td>
+					<td class="white" data-row="7" data-elem="3"><img src="pieces/dw.png"></td>
+					<td class="black" data-row="7" data-elem="4"><img src="pieces/kw.png"></td>
+					<td class="white" data-row="7" data-elem="5"><img src="pieces/lw.png"></td>
+					<td class="black" data-row="7" data-elem="6"><img src="pieces/sw.png"></td>
+					<td class="white" data-row="7" data-elem="7"><img src="pieces/tw.png"></td>
+				</tr>
+			</table>
+			<table id="deadWhite">
+				<tr>
+					<td class="white" data-row="0" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="0" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="1" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="1" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="2" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="2" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="3" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="3" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="4" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="4" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="5" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="5" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="6" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="6" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+				<tr>
+					<td class="white" data-row="7" data-elem="0"><img src="pieces/in.png"></td>
+					<td class="white" data-row="7" data-elem="1"><img src="pieces/in.png"></td>
+				</tr>
+			</table>
+		</board>
+	</body>
+</html>
