@@ -1,0 +1,354 @@
+* {margin: 0;}
+header {
+	background-color: #004b80;
+}
+#header {
+	font-size: 67px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+header a {
+	color: white;
+	text-decoration: initial;
+}
+body {
+	background-color: #f7f7f7;
+}
+header p, header h1 {
+	text-align: center;
+	padding bottom: 35px;
+	padding-top: 18px;
+}
+@media screen and (max-width: 3840px) {
+	board {
+		margin-left: 896px;
+		width: 2048px;
+	}
+	img {
+		width:112px;
+		height:112px;
+	}
+	td {
+		height: 160px;
+		width: 160px;
+	}
+	#deadBlack {
+		width: 320px;
+	}
+	#board {
+		margin-left: 64px;
+		width: 1280px;
+	}
+	#deadWhite {
+		margin-left: 64px;
+		width: 320px;
+	}
+}
+@media screen and (max-width: 3200px) {
+	board {
+		margin-left: 832px;
+		width: 1536px;
+	}
+	img {
+		width:84px;
+		height:84px;
+	}
+	td {
+		height: 120px;
+		width: 120px;
+	}
+	#deadBlack {
+		width: 240px;
+	}
+	#board {
+		margin-left: 48px;
+		width: 960px;
+	}
+	#deadWhite {
+		margin-left: 48px;
+		width: 240px;
+	}
+}
+@media screen and (max-width: 2880px) {
+	board {
+		margin-left: 672px;
+		width: 1536px;
+	}
+	img {
+		width:84px;
+		height:84px;
+	}
+	td {
+		height: 120px;
+		width: 120px;
+	}
+	#deadBlack {
+		width: 240px;
+	}
+	#board {
+		margin-left: 48px;
+		width: 960px;
+	}
+	#deadWhite {
+		margin-left: 48px;
+		width: 240px;
+	}
+}
+@media screen and (max-width: 2560px) {
+	board {
+		margin-left: 640px;
+		width: 1280px;
+	}
+	img {
+		width:70px;
+		height: 70px;
+	}
+	td {
+		height: 100px;
+		width: 100px;
+	}
+	#deadBlack {
+		width: 200px;
+	}
+	#board {
+		margin-left: 40px;
+		width: 800px;
+	}
+	#deadWhite {
+		margin-left: 40px;
+		width: 200px;
+	}
+}
+@media screen and (max-width: 1920px) {
+	board {
+		margin-left: 448px;
+		width: 1024px;
+
+	}
+	img {
+		width:56px;
+		height:56px;
+	}
+	td {
+		height: 80px;
+		width: 80px;
+	}
+	#deadBlack {
+		width: 160px;
+	}
+	#board {
+		margin-left: 32px;
+		width: 640px;
+	}
+	#deadWhite {
+		margin-left: 32px;
+		width: 160px;
+	}
+}
+@media screen and (max-width: 1680px) {
+	board {
+		margin-left: 328px;
+		width: 1024px;
+	}
+	img {
+		width:56px;
+		height:56px;
+	}
+	td {
+		height: 80px;
+		width: 80px;
+	}
+	#deadBlack {
+		width: 160px;
+	}
+	#board {
+		margin-left: 32px;
+		width: 640px;
+	}
+	#deadWhite {
+		margin-left: 32px;
+		width: 160px;
+	}
+}
+@media screen and (max-width: 1600px) {
+	board {
+		margin-left: 480px;
+		width: 640px;
+
+	}
+	img {
+		width:35px;
+		height: 35px;
+	}
+	td {
+		height: 50px;
+		width: 50px;
+	}
+	#deadBlack {
+		width: 100px;
+	}
+	#board {
+		margin-left: 20px;
+		width: 400px;
+	}
+	#deadWhite {
+		margin-left: 20px;
+		width: 100px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	board {
+		margin-left: 400px;
+		width: 640px;
+
+	}
+	img {
+		width:35px;
+		height: 35px;
+	}
+	td {
+		height: 50px;
+		width: 50px;
+	}
+	#deadBlack {
+		width: 100px;
+	}
+	#board {
+		margin-left: 20px;
+		width: 400px;
+	}
+	#deadWhite {
+		margin-left: 20px;
+		width: 100px;
+	}
+}
+@media screen and (max-width: 1366px) {
+	board {
+		margin-left: 363px;
+		width: 640px;
+
+	}
+	img {
+		width:35px;
+		height: 35px;
+	}
+	td {
+		height: 50px;
+		width: 50px;
+	}
+	#deadBlack {
+		width: 100px;
+	}
+	#board {
+		margin-left: 20px;
+		width: 400px;
+	}
+	#deadWhite {
+		margin-left: 20px;
+		width: 100px;
+	}
+}
+@media screen and (max-width: 1280px) {
+	board {
+		margin-left: 320px;
+		width: 640px;
+
+	}
+	img {
+		width:35px;
+		height: 35px;
+	}
+	td {
+		height: 50px;
+		width: 50px;
+	}
+	#deadBlack {
+		width: 100px;
+	}
+	#board {
+		margin-left: 20px;
+		width: 400px;
+	}
+	#deadWhite {
+		margin-left: 20px;
+		width: 100px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	board {
+		margin-left: 192px;
+		width: 640px;
+
+	}
+	img {
+		width:35px;
+		height: 35px;
+	}
+	td {
+		height: 50px;
+		width: 50px;
+	}
+	#deadBlack {
+		width: 100px;
+	}
+	#board {
+		margin-left: 20px;
+		width: 400px;
+	}
+	#deadWhite {
+		margin-left: 20px;
+		width: 100px;
+	}
+}
+@media screen and (max-width: 960px) {
+	board {
+		margin-left: 160px;
+		width: 640px;
+
+	}
+	img {
+		width:35px;
+		height: 35px;
+	}
+	td {
+		height: 50px;
+		width: 50px;
+	}
+	#deadBlack {
+		width: 100px;
+	}
+	#board {
+		margin-left: 20px;
+		width: 400px;
+	}
+	#deadWhite {
+		margin-left: 20px;
+		width: 100px;
+	}
+}
+board {
+	float:left;
+	margin-top:70px;
+}
+#deadBlack,#board,#deadWhite {
+	float: left;
+}
+.white {
+	background-color: white;
+}
+.black {
+	background-color: gray;
+}
+.target {
+	background-color: red;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	text-align: center;
+}
+table, tr, td {
+	border: 1px solid black;
+}
