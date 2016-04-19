@@ -1,0 +1,7 @@
+body p {font-family: helvetica, arial, sans-serif}
+h1,h2,p a{font-family: Georgia, "Times New Roman", serif}
+h1:hover, h2:hover, p a:hover {font-style: italic;}
+/* Oppgaven var litt uklar når det kom til hvilken type tekst
+skulle ha hvilke egenskaper. "p a" er bare brukt på siden for
+elementer som jeg regner som overskrift, jeg har valgte å
+bruke "p" som et stilvalg i sidene jeg lagde i Assignment 2B2 */

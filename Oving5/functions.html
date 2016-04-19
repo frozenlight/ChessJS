@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Øving5_2</title>>
+		<style type="text/CSS">
+			output {
+				font-size: 30pt
+			}
+		</style>
+	</head>
+	<body>
+	<p>
+		The program on this page will create 16 random strings og 6 letters containing any of the lower case letters from 'a' to 'å' and order them into an array.<br> The program will then randomly select one of the 16 strings, and display it on the page.<br> The index of the string displayed on the page, and the rest of the array the string is taken from is displayed in the console.
+	</p>
+		<output id="output">
+
+		</output>
+		<script type="text/javascript">
+			var mainArray = [];
+			function arrayCreate(mainArray) {
+				var choice = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','æ','ø','å'];
+				var tempArray = [];
+				var number = 0
+				var temp = ''
+				var tempString = ''
+				for (i = 1; i<7; i++) {
+					number = Math.floor((Math.random()*28)+0);
+					temp = choice[number];
+					tempArray.push(temp);
+				}
+				tempString = tempArray.join('')
+				mainArray.push(tempString)
+			}
+			function main(mainArray) {
+				var Count = 0
+				while (Count < 16) {
+					Count += 1
+					arrayCreate(mainArray)
+				}
+				console.log(mainArray)
+				var index = Math.floor((Math.random()*16)+0)
+				console.log (index)
+				var outputString = mainArray[index]
+				outputString.toString()
+				console.log (outputString)
+				document.getElementById("output").innerHTML += (outputString)
+			}
+			window.addEventListener('load',main(mainArray))
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Øving5_1</title>
+        <script>
+            function consoleWrite() {
+                var Count = 0
+                while (Count < 21) {
+                    console.log (Count);
+                    Count += 1;
+                }
+                document.getElementById("text").innerHTML = "Congratulations, you did it!"
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="consoleWrite()">Click this button to write to the console!</button>
+        <div id="text">
+        </div>
+    </body>
+</html>

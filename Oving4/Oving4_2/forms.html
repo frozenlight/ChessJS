@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>Forms</title>
+	</head>
+	<body>
+		<header>
+			<a href="../Oving4.html">Tilbake til Øving 4</a>
+			<p id="header">Forms</p>
+			<br>
+			<hr>
+		</header>
+		<div>
+		<nav>
+		</nav>
+		<section>
+			<h2>Please fill out the following student form</h2>
+			<p>Note: a red border indicates that you are required to fill out the box</p>
+			<form action="http://www.idi.ntnu.no/~michailg/IT2805/form.php" method="post">
+				<p><label for="name">Full name:<br>
+					<input type="text" name="name" size="20" maxlength="30" required/></label>
+				</p>
+				<p><label for="email">Email address:<br>
+					<input type="email" name="email" size="20" maxlength="40" required/></label>
+				</p>
+				<p><label for="address">Home address:<br>
+					<input type="text" name="address" size="20" maxlength="40"/></label>
+				</p>
+				<p><label for="phone number">Phone number:<br>
+					<input type="text" name="phone" size="20" maxlength="12"/></label>
+				</p>
+				<p>Which year is this for you as a student?<br>
+					<select name="year" required>
+						<option value="1">1st Year - Freshman</option>
+						<option value="2">2nd Year - Sophomore</option>
+						<option value="3">3rd Year - Junior</option>
+						<option value="4">4th Year - Senior</option>
+					</select>
+				</p>
+				<p><label for="start date">Expected start date:<br>
+					<input type="date" name="startDate" required/></label>
+				</p>
+				<p>Which of the following classes are you interested in?<br>
+					<label for="HTML Basics"><input type="checkbox" name="classes[]" value="ITX1001"> HTML Basics
+					<br>
+					<label for="URLs and Site Structures">
+						<input type="checkbox" name="classes[]" value="ITX1002"> URLs and Site Structures
+					</label>
+					<br>
+					<label for="Introduction to Cascading Style Sheets (CSS)">
+						<input type="checkbox" name="classes[]" value="ITX2001"> Introduction to Cascading Style Sheets (CSS)
+					</label>
+					<br>
+					<label for="CSS Properties and application">
+						<input type="checkbox" name="classes[]" value="ITX2002"> CSS Properties and application
+					</label>
+					<br>
+					<label for="Working with Multimedia on the Web">
+						<input type="checkbox" name="classes[]" value="ABC1001"> Working with Multimedia on the Web
+					</label>
+					<br>
+					<label for="Introduction to JavaScript">
+						<input type="checkbox" name="classes[]" value="JSX1000"> Introduction to JavaScript
+					</label>
+					<br>
+					<label for="JavaScript: DOM">
+						<input type="checkbox" name="classes[]" value="JSX1040"> JavaScript: DOM
+					</label>
+					<br>
+					<label for="XML: Formatting Namescape Trees">
+						<input type="checkbox" name="classes[]" value="XML1000"> XML: Formatting Namescape Trees
+					</label>
+				</p>
+				<p>
+					<label for="comments">Comments:</label><br>
+					<textarea rows="4" cols="40" id="comments"></textarea>
+				</p>
+				<input type="submit" name="submit" value="Submit"/>
+			</form>
+		</section>
+		<footer>
+			<hr>
+			<br>
+		</footer>
+		</div>
+	</body>
+</html>

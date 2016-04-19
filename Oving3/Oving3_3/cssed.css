@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+}
+body {
+	background-color: #f7f7f7;
+}
+
+header#top {
+	background-color: #252525;
+	line-height: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: 600;
+	}
+section#main {
+	width: 670px;
+	margin: auto;
+}
+header#articleHeader {
+	font-size: 40px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 3;
+	color: #252525;
+}
+img {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+a {
+	text-decoration: none;
+	color: initial;
+}
+section#leadParagraph, articleTitle {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 13pt;
+}
+section#byline {
+	font-family: georgia, "Times New Roman", serif;
+	font-size: 10pt;
+}
+section#bodyText p {
+	font-family: georgia, "Times New Roman", serif;
+	font-size: 13pt
+}
+articleTitle {
+	font-weight: bold;
+}
+section#bodyText {
+	width: 595px;
+	margin-bottom: 20px;
+}

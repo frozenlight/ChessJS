@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		Gløshaugen
+	</title>
+	<body>
+		<head>
+			<center>NTNU Gløshaugen</center>
+		</head>
+		<br>
+		</section>
+		<br>
+		<center>
+			<p>
+				<a href="#hjem">Hjem</a> | <a href="bygg">Bygninger</a> | <a href="">	</a> | <a href="">	</a>
+			</p>
+		</center>
+		<br>
+		</section>
+		<br>
+	</body>
+</html>
